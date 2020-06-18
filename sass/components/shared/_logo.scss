@@ -1,0 +1,26 @@
+.logo {
+  display: block;
+
+  color: $logoColor;
+
+  font-family: $logoFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.page-logo {
+  color: $primaryTextColor;
+
+  &--reverse {
+    color: $tertiaryTextColor;
+  }
+}
+
+.page-footer__logo {
+  margin-bottom: 10px;
+
+  font-size: 22px;
+  line-height: 1.18;
+}

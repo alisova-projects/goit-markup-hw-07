@@ -43,11 +43,13 @@
 /* Button */
 
 .hero__button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 9px 31px;
+
   color: var(--tertiary-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  display: inline-block;
 
   font-weight: bold;
   font-size: 16px;
@@ -55,8 +57,6 @@
   letter-spacing: 0.06em;
   text-align: center;
 
-  min-width: 200px;
-  padding: 9px 31px;
   border: 1px solid transparent;
   border-radius: 4px;
 

@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    /> -->
+    <!-- <link rel="stylesheet" href="./css/common.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -44,7 +44,7 @@
           <li class="contact-info__item">
             <a href="mailto:info@devstudio.com" aria-label="Электронная почта"
             class="link contact-info__link">
-              <svg class="contact-info__link--icon-mail" width="16" height="11.2">
+              <svg class="contact-info__link--icon contact-info__link--icon-mail" width="16" height="11.2">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
             info@devstudio.com</a>
@@ -52,7 +52,7 @@
           <li class="item">
             <a href="tel:+380961111111" aria-label="Телефон"
             class="link contact-info__link">
-              <svg class="contact-info__link--icon-phone" width="10" height="15">
+              <svg class="contact-info__link--icon contact-info__link--icon-phone" width="10" height="15">
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>   
             +38 096 111 11 11</a>
@@ -67,7 +67,7 @@
       <section class="hero">
         <div class="hero__container container">
           <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
-          <button href="#" class="hero__button" data-modal-open>Заказать услугу</button>
+          <button href="#" class="button hero__button" data-modal-open>Заказать услугу</button>
         </div>
 
         <div class="backdrop is-hidden" data-modal>
@@ -120,8 +120,8 @@
                     </span>
                   </label>
 
-                  <div class="hero__button--form">
-                    <button class="hero__button hero__button--submit" type="submit">Отправить</button>
+                  <div class="form__button">
+                    <button class="button form__button--submit" type="submit">Отправить</button>
                   </div>
                   
             </form>
@@ -203,7 +203,7 @@
                   height="294"
                   alt="Десктопные приложения"
                 />
-                <h3 class="occupation__link-title">Десктопные приложения</h3>
+                <h3 class="occupation__link--title">Десктопные приложения</h3>
               </a>
             </li>
             <li class="occupation__item item">
@@ -214,7 +214,7 @@
                   height="294"
                   alt="Мобильные приложения"
                 />
-                <h3 class="occupation__link-title">Мобильные приложения</h3>
+                <h3 class="occupation__link--title">Мобильные приложения</h3>
               </a>
             </li>
             <li class="occupation__item item">
@@ -225,7 +225,7 @@
                   height="294"
                   alt="Дизайнерские решения"
                 />
-                <h3 class="occupation__link-title">Дизайнерские решения</h3>
+                <h3 class="occupation__link--title">Дизайнерские решения</h3>
               </a>
             </li>
           </ul>
@@ -248,7 +248,7 @@
                 alt="Джон Смит"
               />
               <div class="card__content">
-                <h3 lang="en" class="card__name">John Smith</h3>
+                <h3 class="card__name">Николай Кучеренко</h3>
                 <p lang="en" class="card__text">Designer</p>
 
                 <ul class="card__socials list">
@@ -304,7 +304,7 @@
                 alt="Марта Стюарт"
               />
               <div class="card__content">
-                <h3 lang="en" class="card__name">Marta Stewart</h3>
+                <h3 class="card__name">Ольга Иванова</h3>
                 <p lang="en" class="card__text">Frontend Developer</p>
 
                 <ul class="card__socials list">
@@ -360,7 +360,7 @@
                 alt="Роберт Джекис"
               />
               <div class="card__content">
-                <h3 lang="en" class="card__name">Robert Jakis</h3>
+                <h3 class="card__name">Андрей Шевченко</h3>
                 <p lang="en" class="card__text">Marketing</p>
 
                 <ul class="card__socials list">
@@ -416,7 +416,7 @@
                 alt="Мартин Дое"
               />
               <div class="card__content">
-                <h3 lang="en" class="card__name">Martin Doe</h3>
+                <h3 class="card__name">Иван Николаев</h3>
                 <p lang="en" class="card__text">UI Designer</p>
 
                 <ul class="card__socials list">
@@ -588,17 +588,17 @@
             <label for="email" class="appeal">подпишитесь на рассылку</label>
             <div class="appeal__container">
               <input class="appeal__email" type="email" name="email" id="email" placeholder="E-mail">
-              <button href="#" class="page-footer__button">Подписаться
+              <button href="#" class="button page-footer__button">Подписаться
                 <svg class="page-footer__button--icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-send"></use>
+                  <use href="../images/sprite.svg#icon-send"></use>
                 </svg>
               </button>
             </div>
         </form>
         
-        <p lang="en" class="copy container">
+        <!-- <p lang="en" class="copy container">
           2020 | Developed by GoIT Students
-        </p>
+        </p> -->
       </div>
     </footer>
 
