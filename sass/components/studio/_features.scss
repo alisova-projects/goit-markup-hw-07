@@ -1,11 +1,12 @@
 /* Our features */
 
 .features__container {
+  @extend %container;
   border-bottom: 1px solid #ececec;
 }
 
 .features__list {
-  display: flex;
+  @extend %list;
 }
 
 .features__item {
@@ -21,12 +22,10 @@
   height: 70px;
 
   &-background {
-    display: flex;
+    @include centeredFlex();
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
-    align-items: center;
-    justify-content: center;
 
     background-color: $secondaryBgColor;
   }

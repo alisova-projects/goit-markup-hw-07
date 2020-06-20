@@ -13,7 +13,7 @@
 }
 
 .page-footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
+  @include colorTextDecor(rgba(255, 255, 255, 0.6));
 
   &:not(:last-child) {
     margin-bottom: 9px;

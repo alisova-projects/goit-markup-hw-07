@@ -1,7 +1,6 @@
 /* Navigation */
 .page-header__nav {
-  display: flex;
-  align-items: center;
+  @include centeredFlex();
 
   color: $primaryTextColor;
 
@@ -12,7 +11,7 @@
 }
 
 .site-nav {
-  display: flex;
+  @extend %list;
   margin-left: 86px;
 }
 
@@ -21,6 +20,7 @@
 }
 
 .site-nav__link {
+  @include colorTextDecor($primaryTextColor);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;

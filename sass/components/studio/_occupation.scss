@@ -1,5 +1,10 @@
 /* Our occupation */
 
+.occupation__container {
+  @extend %container;
+  display: block;
+}
+
 .occupation__title {
   font-weight: bold;
   font-size: 36px;
@@ -10,7 +15,7 @@
 }
 
 .occupation__list {
-  display: flex;
+  @extend %list;
 }
 
 .occupation__item {
@@ -26,6 +31,7 @@
 .occupation__link {
   display: block;
   position: relative;
+  @include colorTextDecor($tertiaryTextColor);
 
   &--title {
     position: absolute;
@@ -35,7 +41,7 @@
     padding-top: 27px;
     padding-bottom: 27px;
 
-    color: $tertiaryTextColor;
+    // color: $tertiaryTextColor;
     background-color: rgb(47, 48, 58);
     width: 100%;
     opacity: 0.8;

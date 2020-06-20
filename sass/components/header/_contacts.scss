@@ -1,7 +1,7 @@
 /* Header contacts */
 
 .contact-info__list {
-  display: flex;
+  @extend %list;
   align-items: center;
   margin-left: auto;
 
@@ -16,13 +16,13 @@
 }
 
 .contact-info__link {
-  display: flex;
-  align-items: center;
+  @include colorTextDecor($secondaryTextColor);
+  @include centeredFlex();
+
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
 
-  color: $secondaryTextColor;
   transition: color $duration $timingFunction;
 
   &:hover,
@@ -31,24 +31,15 @@
   }
 }
 
-.contact-info__link--icon {
-  margin-right: 10px;
-  fill: currentColor;
-  transition: fill $duration $timingFunction;
-
-  &-mail {
-    display: block;
-    width: 16px;
-    height: 11.2px;
-    margin-right: 10px;
-  }
-
-  &-phone {
-    display: block;
-    width: 10px;
-    height: 14.94px;
-    margin-right: 10px;
-  }
+.contact-info__link--icon-mail {
+  @extend %contact-info__link--icon;
+  width: 16px;
+  height: 11.2px;
+}
+.contact-info__link--icon-phone {
+  @extend %contact-info__link--icon;
+  width: 10px;
+  height: 14.94px;
 }
 
 /* .contact-info__link--icon-mail:hover,

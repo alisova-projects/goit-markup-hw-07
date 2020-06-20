@@ -47,12 +47,10 @@
 
   transform: translate(-8px, 8px);
 
+  @include centeredFlex();
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   color: $tertiaryTextColor;
   background-color: $primaryBgColor;
@@ -64,8 +62,7 @@
     display: inline-block;
     width: 11px;
     height: 11px;
-    align-items: center;
-    justify-content: center;
+
     fill: $primaryTextColor;
 
     .close:hover &,
@@ -110,7 +107,7 @@
     margin-bottom: 30px;
   }
 
-  & input[type='checkbox'] {
+  input[type='checkbox'] {
     position: absolute;
     margin-right: 9px;
 
@@ -120,9 +117,8 @@
   }
 
   &--checkbox {
+    @include centeredFlex();
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -233,11 +229,11 @@
     border-color: $accentColor;
   }
 }
-
 .form__button {
   text-align: center;
 
   &--submit {
+    @extend %button;
     padding: 10px 55px;
 
     transform: scale(1);

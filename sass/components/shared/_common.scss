@@ -8,8 +8,6 @@ html {
 }
 
 body {
-  margin: 0;
-
   /* padding-top: 80px;  */
   /* лучше использовать script для задавания паддинга при изменении высоты хедера */
 
@@ -25,11 +23,6 @@ textarea {
   resize: none;
 }
 
-.link {
-  color: $primaryTextColor;
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3,
@@ -37,26 +30,8 @@ p {
   margin: 0;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: block;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  /* outline: 1px solid black; */
 }

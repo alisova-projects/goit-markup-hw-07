@@ -1,7 +1,7 @@
 /* Project gallery */
 
 .project__list {
-  display: flex;
+  @extend %list;
   flex-wrap: wrap;
 }
 
@@ -29,6 +29,7 @@
 }
 
 .project__link {
+  @include colorTextDecor($primaryTextColor);
   display: block;
 }
 

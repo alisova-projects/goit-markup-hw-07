@@ -1,5 +1,9 @@
 /* Фильтр */
 
+.project__container {
+  @extend %container;
+}
+
 .filter__button {
   background-color: $secondaryBgColor;
 
@@ -32,7 +36,7 @@
 }
 
 .filter__list {
-  display: flex;
+  @extend %list;
   justify-content: center;
   margin-bottom: 50px;
 }

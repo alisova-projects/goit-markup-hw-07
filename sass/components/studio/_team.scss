@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.team__container {
+  @extend %container;
+  display: block;
+}
+
 .team__title {
   color: $primaryTextColor;
 
@@ -14,7 +19,7 @@
   margin-bottom: 50px;
 }
 .team__card-set {
-  display: flex;
+  @extend %list;
 }
 
 .card-set__item {
@@ -57,9 +62,8 @@
 }
 
 .card__socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %list;
+  justify-content: space-between;
   padding-right: 32px;
   padding-left: 32px;
 
@@ -69,14 +73,11 @@
 }
 
 .team__social-link {
-  display: flex;
+  @include colorTextDecor($socialsColor);
+  @include centeredFlex();
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-
-  color: $socialsColor;
 
   transition: color $duration $timingFunction,
     background-color $duration $timingFunction;
@@ -91,8 +92,6 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    align-items: center;
-    justify-content: center;
     fill: currentColor;
   }
 }

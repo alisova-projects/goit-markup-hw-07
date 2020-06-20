@@ -1,5 +1,10 @@
 /* Our customers */
 
+.customers__container {
+  @extend %container;
+  display: block;
+}
+
 .customers__title {
   font-weight: bold;
   font-size: 36px;
@@ -9,7 +14,7 @@
   margin-bottom: 50px;
 }
 .customers__logo {
-  display: flex;
+  @extend %list;
 }
 
 .customers__item {
@@ -26,13 +31,12 @@
   fill: currentColor;
 
   &-background {
-    display: flex;
+    @include colorTextDecor($socialsColor);
+    @include centeredFlex();
     height: 90px;
     border-radius: 4px;
-    align-items: center;
-    justify-content: center;
+
     border: 1px solid $socialsColor;
-    color: $socialsColor;
 
     transition: color $duration $timingFunction,
       border-color $duration $timingFunction;

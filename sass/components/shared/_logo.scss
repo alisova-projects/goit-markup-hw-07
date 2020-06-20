@@ -1,13 +1,6 @@
-.logo {
-  display: block;
-
-  color: $logoColor;
-
-  font-family: $logoFont;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+.page-header__logo {
+  @extend %logo;
+  @include colorTextDecor($logoColor);
 }
 
 .page-logo {
@@ -19,6 +12,8 @@
 }
 
 .page-footer__logo {
+  @extend %logo;
+  @include colorTextDecor($logoColor);
   margin-bottom: 10px;
 
   font-size: 22px;

@@ -20,19 +20,15 @@
   &::placeholder {
     font-size: 16px;
     line-height: 1.87;
-
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
-
     color: rgba(255, 255, 255, 0.6);
   }
 }
 
 .page-footer__button {
+  @extend %button;
   display: inline-flex;
   justify-content: flex-start;
-  align-items: center;
 
   padding: 10px 29px;
 
@@ -43,12 +39,6 @@
     /* align-self: flex-end; */
     align-self: center;
     fill: currentColor;
-  }
-
-  &:hover,
-  &:focus {
-    color: $accentColor;
-    background-color: $primaryBgColor;
   }
 }
 
